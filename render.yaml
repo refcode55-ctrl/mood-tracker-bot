@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mood-tracker-bot
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: BOT_TOKEN
+        value: YOUR_BOT_TOKEN_HERE
